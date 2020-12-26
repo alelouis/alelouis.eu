@@ -1,0 +1,75 @@
+body {
+  background-color: #030F13;
+  font-family: 'Ubuntu Mono';
+  font-size: 18px;
+  color: #BDCAD8
+}
+@keyframes mymove {
+  0% {color: #FFC400;
+  text-shadow: 0px 0px 5px #FFC400;}
+  20% {color: #28FF00;
+  text-shadow: 0px 0px 5px #0EFF00;}
+  40% {color: #FF00E9;
+  text-shadow: 0px 0px 5px #FF00E9;}
+  60% {color: #00FFF5;
+  text-shadow: 0px 0px 5px #00FFF5;}
+  80% {color: #FF004E;
+  text-shadow: 0px 0px 5px #FF004E;}
+  100% {color: #FFC400;
+  text-shadow: 0px 0px 5px #FFC400}
+}
+@keyframes promptblink{
+  0% {color: #28FF00;
+  text-shadow: 0px 0px 5px #28FF00;}
+  10% {color: #28FF00;
+  text-shadow: 0px 0px 5px #28FF00;}
+  100% {color: #5F5F75;
+  text-shadow: 0px 0px 5px #5F5F75}
+
+}
+.prompt{
+  text-shadow: 0px 0px 5px #FFC400;
+  animation: promptblink 1s infinite ease-in;
+  color: #41FF00
+}
+.main{
+  margin-left: auto;
+  min-width: 300px;
+  margin-right: auto;
+  vertical-align: middle;
+  width: 20%;
+}
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+.desc{
+  color: #5F5F75
+}
+.title{
+  animation: mymove 25s infinite;
+  padding-top: 75px;
+  color:#FFEE00;
+  font-size: 20px;
+  text-shadow: 0px 0px 5px #FFD900;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.icon {
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: middle;
+}
+.text{
+  transition: text-shadow .3s;
+  transition: color .3s;
+  color: #838C96
+}
+.text:hover {
+  text-shadow: 0px 0px 5px #FFFFFF;
+  color: #E1E9F1
+}
