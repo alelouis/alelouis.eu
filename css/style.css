@@ -4,6 +4,7 @@ body {
   font-size: 18px;
   color: #BDCAD8
 }
+
 @keyframes mymove {
   0% {color: #FFC400;
   text-shadow: 0px 0px 5px #FFC400;}
@@ -32,12 +33,22 @@ body {
   animation: promptblink 1s infinite ease-in;
   color: #41FF00
 }
+.latest{
+  color:#3880ff
+}
 .main{
   margin-left: auto;
   min-width: 300px;
   margin-right: auto;
   vertical-align: middle;
   width: 20%;
+}
+.main-stories{
+  margin-left: auto;
+  min-width: 300px;
+  margin-right: auto;
+  vertical-align: middle;
+  width: 30%;
 }
 a {
   color: inherit; /* blue colors for links too */
@@ -46,6 +57,23 @@ a {
 .desc{
   color: #5F5F75
 }
+.date{
+  color: #5F5F75;
+  font-style: italic;
+}
+.pdf{
+  color: #ff3e3e;
+  font-size: 14px;
+}
+.md{
+  color: #ffce00;
+  font-size: 14px;
+}
+.epub{
+  color: #10dc60;
+  font-size: 14px;
+}
+
 .title{
   animation: mymove 25s infinite;
   padding-top: 75px;
