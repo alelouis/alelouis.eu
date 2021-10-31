@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+	<title>shortstories.alelouis.eu</title>
+  <style>
+	@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+  </style> 
+	<link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class=main-stories>
+	<div class='title'><a href='index.html'> alelouis.eu</div></a>
+	<div class='desc'>~/home/alelouis/short-stories<span class='prompt'>$</span></div>
+	<div class='links'>
+	  <ul>
+		{% for story in stories %}
+			<span class='story'>
+			<ion-item>
+			  <ion-icon item-start name="reorder-two-outline" color='bright' class="icon"></ion-icon>
+			  <span class='text'>
+				 {{ story.title }}
+			  </span></ion-icon>
+			</ion-item></br>
+			  <a href='{{ base_url }}/pdf/{{ story.title_case }}.pdf' download>
+				<ion-icon name="document-text-outline" class='icon' color="danger"></ion-icon>
+				<span class='pdf'>PDF</span>
+			  </a>
+			  <a href='{{ base_url }}/md/{{ story.title_case }}.md' download>
+				<ion-icon name="document-text-outline" class='icon' color="warning"></ion-icon>
+				<span class='md'>MD</span>
+			  </a>
+			  <a href='{{ base_url }}/epub/{{ story.title_case }}.epub' download>
+				<ion-icon name="document-text-outline" class='icon' style="color: #10dc60" ></ion-icon>
+				<span class='epub'>EPUB</span>
+			  </a>
+			</ion-item>
+			<span class='date'>{{ story.date }}</span></br>
+			</span>
+		{% endfor %}
+	  </ul>
+	</div>
+	</div>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</body>
+</html>

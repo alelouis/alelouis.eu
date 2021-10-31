@@ -1,0 +1,10 @@
+{
+  "actions" : {
+    "run" : {
+      "command" : "\/bin\/zsh",
+      "enabled" : true,
+      "script" : "conda init zsh && source ~\/.zshrc && conda activate alelouis.eu && python main.py"
+    }
+  },
+  "identifier" : "2D860311-D5AE-4336-8FC9-D1F611990257"
+}

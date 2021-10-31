@@ -1,6 +1,11 @@
+@font-face {
+  font-family: JuliaMono-Regular;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.042/JuliaMono-Regular.woff2");
+}
+
 body {
   background-color: #030F13;
-  font-family: 'Ubuntu Mono';
+  font-family: 'JuliaMono-Regular';
   font-size: 18px;
   color: #BDCAD8
 }
@@ -61,6 +66,7 @@ a {
   color: #5F5F75;
   font-style: italic;
 }
+
 .pdf{
   color: #ff3e3e;
   font-size: 14px;

@@ -1,0 +1,29 @@
+{
+	"base_url": "https://raw.githubusercontent.com/alelouis/short-stories/main",
+	"stories":[
+	{
+		"title":"Le Spleen du Robot", 
+		"title_case":"le-spleen-du-robot", 
+		"date":"30 Octobre 2021"
+	},
+	{
+		"title":"oekfh24", 
+		"title_case":"oekfh24", 
+		"date":"28 Décembre 2020"
+	},
+	{
+		"title":"Cyber-Anges Gardiens", 
+		"title_case":"cyber-anges-gardiens", 
+		"date":"19 Septembre 2020"
+	},
+	{
+		"title":"Chassés Croisés", 
+		"title_case":"chasses-croises", 
+		"date":"09 Septembre 2020"
+	},
+	{
+		"title":"Brasier Lunaire", 
+		"title_case":"brasier-lunaire", 
+		"date":"10 Mai 2020"
+	}]
+}
